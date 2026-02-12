@@ -3,7 +3,6 @@
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-import pytest
 
 from conversational_rag.retriever import Retriever
 
@@ -11,12 +10,12 @@ from conversational_rag.retriever import Retriever
 class TestRetrieverInit:
     def test_default_model_name(self):
         with patch("conversational_rag.retriever.SentenceTransformer") as mock_st:
-            retriever = Retriever()
+            Retriever()
             mock_st.assert_called_once_with("all-MiniLM-L6-v2")
 
     def test_custom_model_name(self):
         with patch("conversational_rag.retriever.SentenceTransformer") as mock_st:
-            retriever = Retriever(model_name="custom-model")
+            Retriever(model_name="custom-model")
             mock_st.assert_called_once_with("custom-model")
 
     def test_initial_state_empty(self):

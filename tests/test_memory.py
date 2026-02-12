@@ -1,7 +1,6 @@
 import time
 
 from conversational_rag.memory import ConversationMemory
-from conversational_rag.models import Message
 
 
 class TestConversationMemoryInit:
