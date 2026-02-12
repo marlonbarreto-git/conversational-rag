@@ -2,12 +2,25 @@
 name = "conversational-rag"
 version = "0.1.0"
 description = "RAG with conversational memory and query reformulation for follow-up questions."
+license = {text = "MIT"}
+authors = [{name = "Marlon Barreto", email = "mbarretot@hotmail.com"}]
+keywords = ["RAG", "conversational-ai", "LLM", "retrieval-augmented-generation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
 requires-python = ">=3.11"
 dependencies = [
     "sentence-transformers>=3.4.0",
     "numpy>=2.0.0",
     "pydantic>=2.10.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/marlonbarreto-git/conversational-rag"
+Repository = "https://github.com/marlonbarreto-git/conversational-rag"
+Issues = "https://github.com/marlonbarreto-git/conversational-rag/issues"
 
 [project.optional-dependencies]
 dev = [
